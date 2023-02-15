@@ -1,4 +1,4 @@
-### ISIS_Lab2
+### ISIS_Lab4
 Kubernetes. Знакомство с абстракциями pod, replicaset, deployment resources
 
 ### Инструкция Docker
