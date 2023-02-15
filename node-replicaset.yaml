@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nodeapp-replicaset
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nodeapp
+  template:
+    metadata:
+      labels:
+        app: nodeapp 
+    spec:
+      containers:
+      - name: nodejs-isis4-lab
+        image: alx5874/my-repository:nodejs-docker-isis4
+        ports:
+            - containerPort: 8080

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodejs-isis4
+spec:
+  containers:
+  - name: nodejs-isis4-lab
+    image: alx5874/my-repository:nodejs-docker-isis4
+    ports:
+        - containerPort: 8080
